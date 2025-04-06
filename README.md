@@ -21,9 +21,11 @@ Cuenta con un diseño sencillo pero intuitivo para los usuarios.
    git clone https://github.com/tu-usuario/nombre-repositorio.git
 
 2.Abrir el proyecto
+
 code .
 
 3.Ejecutar la página
+
 Haz doble clic en index.html (se abrirá en tu navegador predeterminado)
 
 ## 4. Mockup de la aplicación
