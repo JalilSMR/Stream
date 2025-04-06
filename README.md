@@ -10,7 +10,7 @@ Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 - Tecnologías utilizadas: HTML, JavaScript y Bootstrap
 - CSS: No se utilizó en esta versión inicial
 
-## 3. Cómo instalar
+3. Cómo instalar
 ### Prerrequisitos:
 - Git instalado
 - Cuenta en GitHub
@@ -18,15 +18,15 @@ Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 
 ### Pasos:
 1. Clonar el repositorio:
-   git clone https://github.com/[tu-usuario]/[nombre-repositorio].git
-   cd [nombre-repositorio]
+   git clone https://github.com/tu-usuario/nombre-repositorio.git
 
-Abrir el proyecto
+2.Abrir el proyecto
 code .
-Ejecutar la página:
+
+3.Ejecutar la página
 Haz doble clic en index.html (se abrirá en tu navegador predeterminado)
 
-4. Mockup de la aplicación
+## 4. Mockup de la aplicación
 
 
 
