@@ -19,11 +19,12 @@ Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 ### Pasos:
 
 1. Clonar el repositorio:
+
 git clone https://github.com/tu-usuario/nombre-repositorio.git
 
 2. Abrir el proyecto:
 
-code .
+  code .
 
 3. Ejecutar la página:
 
