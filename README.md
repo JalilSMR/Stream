@@ -54,6 +54,12 @@ Al final, desplegué un footer para mejorar la simulación, pero falta agregar u
 Este diseño se repitió en las demás páginas, por lo que hay ligeras diferencias. Sin embargo, en la página de inicio de sesión, hubo cambios para simular el inicio del usuario. Aún hay trabajo pendiente, ya que al usar el botón de inicio de sesión, te redirige al menú principal.
 
 
+**# 6. Sprint Review**  
 
+**# 6. Sprint Review**  
+
+| ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
+|------------------|-----------------------------|---------------------|
+| - Se logró crear un diseño sencillo y fácil de usar para el usuario final, permitiendo navegar entre páginas hacia las categorías deseadas. <br> - Se redujeron horas de trabajo gracias al enfoque de diseño y el uso de Bootstrap. <br> - Los botones permiten ver más/menos contenido en las *cards*, así como eliminar una *card* específica. | - Mejorar habilidades con CSS (experimentar en el siguiente sprint). <br> - Automatizar la creación de *cards* para reducir trabajo manual. <br> - Rediseñar la página de inicio de sesión para mejorar su aspecto visual. | - El diseño *responsive* no funciona en todos los tamaños de pantalla, a pesar de usar Bootstrap. <br> - Si no hay suficiente contenido en el *body*, el *footer* se contrae hacia el *navbar*. <br> - La página de género quedó poco elaborada (solo se usaron `<hr>` y agrupaciones básicas de películas). |
 
 
