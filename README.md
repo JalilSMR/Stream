@@ -1,6 +1,6 @@
 # YourStream
 
-**Desarrollado por:** Jaili Samas Mendoza Reyes
+**Desarrollado por:** Jalil Samas Mendoza Reyes
 
 ## 1. Resumen
 Esta página es una simulación de un servicio de streaming llamada YourStream.  
@@ -52,9 +52,6 @@ Desplegué un navbar con mis páginas y luego me centré en la creación del bod
 Al final, desplegué un footer para mejorar la simulación, pero falta agregar un modal para mostrar los dos enlaces que contiene.
 
 Este diseño se repitió en las demás páginas, por lo que hay ligeras diferencias. Sin embargo, en la página de inicio de sesión, hubo cambios para simular el inicio del usuario. Aún hay trabajo pendiente, ya que al usar el botón de inicio de sesión, te redirige al menú principal.
-
-
-**# 6. Sprint Review**  
 
 **# 6. Sprint Review**  
 
