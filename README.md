@@ -33,7 +33,7 @@ Haz doble clic en index.html (se abrirá en tu navegador predeterminado)
 ## 4. Mockup de la aplicación
 <img src="Pagina/Imagenes/Mockup.png" width="600" alt="Mockup">
 
-## 5./6. Capturas y explicación
+## 5. Capturas de pagina en funcionamiento
 
 <img src="Pagina/Imagenes/Inicio.png" width="600" alt="Menu">
 Esta es la página principal donde encontrarás todas las películas disponibles. 
@@ -43,6 +43,15 @@ Este diseño uniforme se mantiene en todas las secciones, excepto en la página 
 <img src="Pagina/Imagenes/IniciarSesión.png" width="600" alt="Inicio de sesión">
 Esta es la única página con un diseño diferente, donde podrás iniciar sesión en tu cuenta de usuario. 
 Actualmente, esta función está en desarrollo, por lo que al intentar iniciar sesión serás redirigido automáticamente a la página de inicio.
+
+## Proceso de creación
+Para reducir la complejidad del diseño, usé Bootstrap, lo cual me ahorró tiempo en las secciones principales de cada página (nav, body).
+
+Desplegué un navbar con mis páginas y luego me centré en la creación del body, haciendo columnas de 3 para presentar las películas. Utilicé cards y añadí información como el género y la sinopsis de las películas.
+
+Al final, desplegué un footer para mejorar la simulación, pero falta agregar un modal para mostrar los dos enlaces que contiene.
+
+Este diseño se repitió en las demás páginas, por lo que hay ligeras diferencias. Sin embargo, en la página de inicio de sesión, hubo cambios para simular el inicio del usuario. Aún hay trabajo pendiente, ya que al usar el botón de inicio de sesión, te redirige al menú principal.
 
 
 
