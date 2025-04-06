@@ -10,7 +10,7 @@ Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 - Tecnologías utilizadas: HTML, JavaScript y Bootstrap
 - CSS: No se utilizó en esta versión inicial
 
-3. Cómo instalar
+## 3. Cómo instalar
 ### Prerrequisitos:
 - Git instalado
 - Cuenta en GitHub
