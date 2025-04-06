@@ -17,14 +17,15 @@ Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 - Navegador web moderno (Chrome, Firefox, Edge, etc.)
 
 ### Pasos:
-1. Clonar el repositorio:
-   git clone https://github.com/tu-usuario/nombre-repositorio.git
 
-2.Abrir el proyecto
+1. Clonar el repositorio:
+git clone https://github.com/tu-usuario/nombre-repositorio.git
+
+2. Abrir el proyecto:
 
 code .
 
-3.Ejecutar la página
+3. Ejecutar la página:
 
 Haz doble clic en index.html (se abrirá en tu navegador predeterminado)
 
@@ -34,13 +35,13 @@ Haz doble clic en index.html (se abrirá en tu navegador predeterminado)
 ## 5./6. Capturas y explicación
 
 <img src="Pagina/Imagenes/Inicio.png" width="600" alt="Menu">
-Esta es la pagina principal, donde puedes encontrar todas las peliculas.
-Puedes disminuir la sinopsis asi como dejarla completa y tambien hay un boton para eliminar la card.
-Esta diseño es el que encontraras en el resto de las paginas, excepto por inicio de sesión.
+Esta es la página principal donde encontrarás todas las películas disponibles. 
+Puedes expandir o contraer las sinopsis según tu preferencia, además de contar con un botón para eliminar cada tarjeta. 
+Este diseño uniforme se mantiene en todas las secciones, excepto en la página de inicio de sesión.
 
 <img src="Pagina/Imagenes/IniciarSesión.png" width="600" alt="Inicio de sesión">
-Esta es la unica pagina que no es como las otras, en ella podras iniciar sesión a tu cuenta de usuario.
-Aún no es funcional, por lo cual te llevara al incio una vez trates de iniciar sesión.
+Esta es la única página con un diseño diferente, donde podrás iniciar sesión en tu cuenta de usuario. 
+Actualmente, esta función está en desarrollo, por lo que al intentar iniciar sesión serás redirigido automáticamente a la página de inicio.
 
 
 
