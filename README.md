@@ -29,7 +29,19 @@ code .
 Haz doble clic en index.html (se abrirá en tu navegador predeterminado)
 
 ## 4. Mockup de la aplicación
-<img src="Pagina/Imagenes/Mockup.png" width="600" alt="Captura de YourStream">
+<img src="Pagina/Imagenes/Mockup.png" width="600" alt="Mockup">
+
+## 5./6. Capturas y explicación
+
+<img src="Pagina/Imagenes/Inicio.png" width="600" alt="Menu">
+Esta es la pagina principal, donde puedes encontrar todas las peliculas.
+Puedes disminuir la sinopsis asi como dejarla completa y tambien hay un boton para eliminar la card.
+Esta diseño es el que encontraras en el resto de las paginas, excepto por inicio de sesión.
+
+<img src="Pagina/Imagenes/IniciarSesión.png" width="600" alt="Inicio de sesión">
+Esta es la unica pagina que no es como las otras, en ella podras iniciar sesión a tu cuenta de usuario.
+Aún no es funcional, por lo cual te llevara al incio una vez trates de iniciar sesión.
+
 
 
 
