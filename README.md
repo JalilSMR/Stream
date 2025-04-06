@@ -29,7 +29,7 @@ code .
 Haz doble clic en index.html (se abrirá en tu navegador predeterminado)
 
 ## 4. Mockup de la aplicación
-<img src="Stream/Pagina/Imagenes/Mockup.png" width="600" alt="Captura de YourStream">
+<img src="Pagina/Imagenes/Mockup.png" width="600" alt="Captura de YourStream">
 
 
 
