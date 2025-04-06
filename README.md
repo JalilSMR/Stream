@@ -53,7 +53,7 @@ Al final, desplegué un footer para mejorar la simulación, pero falta agregar u
 
 Este diseño se repitió en las demás páginas, por lo que hay ligeras diferencias. Sin embargo, en la página de inicio de sesión, hubo cambios para simular el inicio del usuario. Aún hay trabajo pendiente, ya que al usar el botón de inicio de sesión, te redirige al menú principal.
 
-**# 6. Sprint Review**  
+## 6. Sprint Review**  
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
