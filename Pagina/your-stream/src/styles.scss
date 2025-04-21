@@ -1,0 +1,147 @@
+/* home.component.scss */
+.container.p-3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Animación para eliminar cards */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 17px);
+    /* 3 cards por fila con gap de 25px */
+    display: flex;
+    flex-direction: column;
+
+    /* Estado para animación de eliminación */
+    &.deleting {
+        animation: fadeOut 2s forwards;
+        pointer-events: none;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    &-img-top {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: 300px;
+    }
+
+    &-body {
+        padding: 1.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .card-text {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        /* Contenedor de botones centrados */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: auto;
+            padding-top: 10px;
+        }
+
+        .btn {
+            border-radius: 6px;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+
+            &:hover {
+                background-color: #0b5ed7;
+                border-color: #0a58ca;
+                transform: translateY(-2px);
+            }
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+
+            &:hover {
+                background-color: #bb2d3b;
+                border-color: #b02a37;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 13px);
+        /* 2 cards por fila en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* 1 card por fila en móviles */
+
+        &-img-top {
+            max-height: 250px;
+        }
+
+        &-body {
+            .button-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
