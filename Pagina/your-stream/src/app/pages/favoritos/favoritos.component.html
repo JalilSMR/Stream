@@ -1,20 +1,30 @@
 
     <h2 class="text-center mt-3">Basados en tus preferencias, te traemos las siguientes recomendaciones</h2>
+    @for (row of [0,1,2,3,4]; track row) {
     <div class="container p-3">
         <div class="row">
-            <div class="col" *ngFor="let tarjeta of tarjetas; let i = index">
-                <div class="card" style="width: 18rem;">
-                    <img [src]="tarjeta.imagen" class="card-img-top" [alt]="tarjeta.titulo">
+            @for (card of getRowCards(row); track card.id) {
+            <div class="col">
+                <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
+                    <img [src]="card.image" [alt]="card.title" class="card-img-top">
                     <div class="card-body">
-                        <h4>{{ tarjeta.titulo }}</h4>
-                        <p class="card-text" *ngIf="tarjeta.mostrar">{{ tarjeta.descripcion }}</p>
-                        <button class="btn btn-primary" (click)="toggleMostrar(i)">
-                            {{ tarjeta.mostrar ? 'Menos' : 'Más' }}
+                        <h4>{{card.genres}}</h4>
+                        <p class="card-text">
+                            @if (card.showFullText) {
+                            {{card.fullDescription}}
+                            } @else {
+                            {{card.shortDescription}}
+                            }
+                        </p>
+                        <button class="btn btn-primary" (click)="toggleText(card)">
+                            {{card.showFullText ? 'Menos' : 'Más'}}
                         </button>
-                        <button class="btn btn-danger" (click)="eliminarTarjeta(i)">Eliminar</button>
+                        <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
                     </div>
                 </div>
             </div>
+            }
         </div>
     </div>
+    }
 

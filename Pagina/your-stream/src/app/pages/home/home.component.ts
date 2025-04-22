@@ -21,7 +21,7 @@ interface MovieCard {
 })
 export class HomeComponent {
   movieCards: MovieCard[] = [
-    // Primera fila
+    //Primera fila
     {
       id: 1,
       title: 'Solo Leveling',
@@ -53,7 +53,7 @@ export class HomeComponent {
       isDeleting: false
     },
 
-    // Segunda fila
+    //Segunda fila
     {
       id: 4,
       title: 'Moana 2',
@@ -85,7 +85,7 @@ export class HomeComponent {
       isDeleting: false
     },
 
-    // Tercera fila
+    //Tercera fila
     {
       id: 7,
       title: 'Gladiador II',
@@ -117,7 +117,7 @@ export class HomeComponent {
       isDeleting: false
     },
 
-    // Cuarta fila
+    //Cuarta fila
     {
       id: 10,
       title: 'Natsume\'s Book of Friends',
@@ -149,7 +149,7 @@ export class HomeComponent {
       isDeleting: false
     },
 
-    // Quinta fila
+    //Quinta fila
     {
       id: 13,
       title: 'Rick y Morty',
@@ -182,18 +182,18 @@ export class HomeComponent {
     }
   ];
 
-  // Método para obtener cards por fila (3 por fila)
+  //Método para obtener cards por fila (3 por fila)
   getRowCards(rowIndex: number): MovieCard[] {
     const startIndex = rowIndex * 3;
     return this.movieCards.slice(startIndex, startIndex + 3);
   }
 
-  // Alternar entre texto completo y resumido
+  //Alternar entre texto completo y resumido
   toggleText(card: MovieCard): void {
     card.showFullText = !card.showFullText;
   }
 
-  // Eliminar card con animación
+  //Eliminar card con animación
   deleteCard(cardId: number): void {
     const card = this.movieCards.find(c => c.id === cardId);
     if (card) {
