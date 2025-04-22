@@ -52,7 +52,7 @@ Al final, desplegué un footer para mejorar la simulación, pero falta agregar u
 
 Este diseño se repitió en las demás páginas, por lo que hay ligeras diferencias. Sin embargo, en la página de inicio de sesión, hubo cambios para simular el inicio del usuario. Aún hay trabajo pendiente, ya que al usar el botón de inicio de sesión, te redirige al menú principal.
 
-##Proceso de creación 2
+## Proceso de creación 2
 Descargué e instalé las últimas versiones de Angular para comenzar con una base actualizada y optimizada.
 
 Diseñé y organicé la estructura del proyecto, creando componentes específicos para cada página con el fin de mantener una arquitectura clara y modular.
@@ -66,6 +66,6 @@ Una vez finalizada la migración, realicé mejoras visuales utilizando SCSS y es
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
-| - Se completó la migración de todas las páginas, sin omitir ningún componente ni funcionalidad. <br> - Se integró SCSS para mejorar la presentación visual y facilitar el mantenimiento de estilos. <br> - Se redujo el contenido de las cards, dando una mejor experiencia visual | - Es necesario dedicar más tiempo al diseño responsive, ya que aún no se comporta correctamente en todos los dispositivos. <br> - Considerar el uso de una API en el futuro para automatizar parte del contenido y reducir el trabajo manual. <br> | - - Al estar aprendiendo Angular, repetí ciertos errores por falta de experiencia. <br> - La página de géneros presentó muchos inconvenientes técnicos, lo que requirió una gran inversión de tiempo. |
+| - Se completó la migración de todas las páginas, sin omitir ningún componente ni funcionalidad. <br> - Se integró SCSS para mejorar la presentación visual y facilitar el mantenimiento de estilos. <br> - Se redujo el contenido de las cards, dando una mejor experiencia visual | - Es necesario dedicar más tiempo al diseño responsive, ya que aún no se comporta correctamente en todos los dispositivos. <br> - Considerar el uso de una API en el futuro para automatizar parte del contenido y reducir el trabajo manual. <br> | - Al estar aprendiendo Angular, repetí ciertos errores por falta de experiencia. <br> - La página de géneros presentó muchos inconvenientes técnicos, lo que requirió una gran inversión de tiempo. |
 
 
