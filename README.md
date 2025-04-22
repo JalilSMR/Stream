@@ -7,8 +7,7 @@ Esta página es una simulación de un servicio de streaming llamada YourStream.
 Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 
 ## 2. Requerimientos técnicos
-- Tecnologías utilizadas: HTML, JavaScript y Bootstrap
-- CSS: No se utilizó en esta versión inicial
+- Tecnologías utilizadas: HTML, JavaScript, Bootstrap, SCSS y Angular.
 
 ## 3. Cómo instalar
 ### Prerrequisitos:
@@ -28,7 +27,7 @@ git clone https://github.com/tu-usuario/nombre-repositorio.git
 
 3. Ejecutar la página:
 
-Haz doble clic en index.html (se abrirá en tu navegador predeterminado)
+Al ser un proyecto en angular, deberas usar ng s, para iniciar la pagina y poder verla en el ordenador.
 
 ## 4. Mockup de la aplicación
 <img src="Pagina/Imagenes/Mockup.png" width="600" alt="Mockup">
@@ -53,10 +52,20 @@ Al final, desplegué un footer para mejorar la simulación, pero falta agregar u
 
 Este diseño se repitió en las demás páginas, por lo que hay ligeras diferencias. Sin embargo, en la página de inicio de sesión, hubo cambios para simular el inicio del usuario. Aún hay trabajo pendiente, ya que al usar el botón de inicio de sesión, te redirige al menú principal.
 
-## 6. Sprint Review
+## Proceso de creación 2
+Descargué e instalé las últimas versiones de Angular para comenzar con una base actualizada y optimizada.
+
+Diseñé y organicé la estructura del proyecto, creando componentes específicos para cada página con el fin de mantener una arquitectura clara y modular.
+
+Implementé la lógica necesaria para migrar el contenido y funcionalidades del proyecto original, asegurando que cada página mantuviera su comportamiento original en Angular.
+
+Una vez finalizada la migración, realicé mejoras visuales utilizando SCSS y estilos personalizados, con el objetivo de optimizar la experiencia del usuario y modernizar la interfaz.
+
+
+## 6. Sprint Review 2
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
-| - Se logró crear un diseño sencillo y fácil de usar para el usuario final, permitiendo navegar entre páginas hacia las categorías deseadas. <br> - Se redujeron horas de trabajo gracias al enfoque de diseño y el uso de Bootstrap. <br> - Los botones permiten ver más/menos contenido en las *cards*, así como eliminar una *card* específica. | - Mejorar habilidades con CSS (experimentar en el siguiente sprint). <br> - Automatizar la creación de *cards* para reducir trabajo manual. <br> - Rediseñar la página de inicio de sesión para mejorar su aspecto visual. | - El diseño *responsive* no funciona en todos los tamaños de pantalla, a pesar de usar Bootstrap. <br> - Si no hay suficiente contenido en el *body*, el *footer* se contrae hacia el *navbar*. <br> - La página de género quedó poco elaborada (solo se usaron `<hr>` y agrupaciones básicas de películas). |
+| - Se completó la migración de todas las páginas, sin omitir ningún componente ni funcionalidad. <br> - Se integró SCSS para mejorar la presentación visual y facilitar el mantenimiento de estilos. <br> - Se redujo el contenido de las cards, dando una mejor experiencia visual | - Es necesario dedicar más tiempo al diseño responsive, ya que aún no se comporta correctamente en todos los dispositivos. <br> - Considerar el uso de una API en el futuro para automatizar parte del contenido y reducir el trabajo manual. <br> | - Al estar aprendiendo Angular, repetí ciertos errores por falta de experiencia. <br> - La página de géneros presentó muchos inconvenientes técnicos, lo que requirió una gran inversión de tiempo. |
 
 
