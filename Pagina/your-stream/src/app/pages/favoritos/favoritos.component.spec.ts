@@ -14,7 +14,6 @@ describe('FavoritosComponent', () => {
 
     fixture = TestBed.createComponent(FavoritosComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
