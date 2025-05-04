@@ -1,29 +1,31 @@
 <h1 class="text-center mt-3">Bienvenido al mejor servicio de Stream</h1>
 
-@for (row of [0,1,2,3,4]; track row) {
-<div class="container p-3">
-    <div class="row">
-        @for (card of getRowCards(row); track card.id) {
-        <div class="col">
-            <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
-                <img [src]="card.image" [alt]="card.title" class="card-img-top">
-                <div class="card-body">
-                    <h4>{{card.genres}}</h4>
-                    <p class="card-text">
-                        @if (card.showFullText) {
-                        {{card.fullDescription}}
-                        } @else {
-                        {{card.shortDescription}}
-                        }
-                    </p>
-                    <button class="btn btn-primary" (click)="toggleText(card)">
-                        {{card.showFullText ? 'Menos' : 'Más'}}
-                    </button>
-                    <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
+<ng-container *ngIf="movieCards$ | async as cards">
+    @for (row of [0,1,2]; track row) {
+    <div class="container p-3">
+        <div class="row">
+            @for (card of getRowCards(cards, row); track card.id) {
+            <div class="col">
+                <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
+                    <img [src]="card.image" [alt]="card.title" class="card-img-top" />
+                    <div class="card-body">
+                        <h4>{{card.genres}}</h4>
+                        <p class="card-text">
+                            @if (card.showFullText) {
+                            {{card.fullDescription}}
+                            } @else {
+                            {{card.shortDescription}}
+                            }
+                        </p>
+                        <button class="btn btn-primary" (click)="toggleText(card)">
+                            {{card.showFullText ? 'Menos' : 'Más'}}
+                        </button>
+                        <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
+                    </div>
                 </div>
             </div>
+            }
         </div>
-        }
     </div>
-</div>
-}
+    }
+</ng-container>
