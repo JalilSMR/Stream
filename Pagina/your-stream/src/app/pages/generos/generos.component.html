@@ -1,141 +1,27 @@
-<div class="text-center mt-3">
-    <!-- Sección Animación -->
-    <h3>Animación</h3>
-    <div class="container p-3">
-        <div class="row">
-            @for (card of mediaCards.slice(0, 3); track card.id) {
-            <div class="col">
-                <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
-                    <img [src]="card.image" [alt]="card.title" class="card-img-top">
-                    <div class="card-body">
-                        <h4>{{card.genres}}</h4>
-                        <p class="card-text">
-                            @if (card.showFullText) {
-                            {{card.fullDescription}}
-                            } @else {
-                            {{card.shortDescription}}
-                            }
-                        </p>
-                        <button class="btn btn-primary" (click)="toggleText(card)">
-                            {{card.showFullText ? 'Menos' : 'Más'}}
-                        </button>
-                        <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
+<div class="text-center mt-3" *ngIf="groupedCards$ | async as groups">
+    <ng-container *ngFor="let entry of groups | keyvalue; let last = last">
+        <h3>{{ entry.key }}</h3>
+        <div class="container p-3">
+            <div class="row">
+                <div class="col" *ngFor="let card of entry.value; trackBy: trackById">
+                    <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
+                        <img [src]="card.image" [alt]="card.title" class="card-img-top">
+                        <div class="card-body">
+                            <h4>{{ card.title }}</h4>
+                            <p class="card-text">
+                                {{ card.showFullText ? card.fullDescription : card.shortDescription }}
+                            </p>
+                            <button class="btn btn-primary" (click)="toggleText(card)">
+                                {{ card.showFullText ? 'Menos' : 'Más' }}
+                            </button>
+                            <button class="btn btn-danger" (click)="deleteCard(card)">
+                                Eliminar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            }
         </div>
-    </div>
-    <div class="container p-3">
-        <div class="row">
-            @for (card of mediaCards.slice(3, 6); track card.id) {
-            <div class="col">
-                <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
-                    <img [src]="card.image" [alt]="card.title" class="card-img-top">
-                    <div class="card-body">
-                        <h4>{{card.genres}}</h4>
-                        <p class="card-text">
-                            @if (card.showFullText) {
-                            {{card.fullDescription}}
-                            } @else {
-                            {{card.shortDescription}}
-                            }
-                        </p>
-                        <button class="btn btn-primary" (click)="toggleText(card)">
-                            {{card.showFullText ? 'Menos' : 'Más'}}
-                        </button>
-                        <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
-                    </div>
-                </div>
-            </div>
-            }
-        </div>
-    </div>
-    <hr>
-
-    <!-- Sección Acción -->
-    <h3>Acción</h3>
-    <div class="container p-3">
-        <div class="row">
-            @for (card of mediaCards.slice(6, 9); track card.id) {
-            <div class="col">
-                <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
-                    <img [src]="card.image" [alt]="card.title" class="card-img-top">
-                    <div class="card-body">
-                        <h4>{{card.genres}}</h4>
-                        <p class="card-text">
-                            @if (card.showFullText) {
-                            {{card.fullDescription}}
-                            } @else {
-                            {{card.shortDescription}}
-                            }
-                        </p>
-                        <button class="btn btn-primary" (click)="toggleText(card)">
-                            {{card.showFullText ? 'Menos' : 'Más'}}
-                        </button>
-                        <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
-                    </div>
-                </div>
-            </div>
-            }
-        </div>
-    </div>
-    <hr>
-
-    <!-- Sección Ciencia Ficción -->
-    <h3>Ciencia Ficción</h3>
-    <div class="container p-3">
-        <div class="row">
-            @for (card of mediaCards.slice(9, 12); track card.id) {
-            <div class="col">
-                <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
-                    <img [src]="card.image" [alt]="card.title" class="card-img-top">
-                    <div class="card-body">
-                        <h4>{{card.genres}}</h4>
-                        <p class="card-text">
-                            @if (card.showFullText) {
-                            {{card.fullDescription}}
-                            } @else {
-                            {{card.shortDescription}}
-                            }
-                        </p>
-                        <button class="btn btn-primary" (click)="toggleText(card)">
-                            {{card.showFullText ? 'Menos' : 'Más'}}
-                        </button>
-                        <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
-                    </div>
-                </div>
-            </div>
-            }
-        </div>
-    </div>
-    <hr>
-
-    <!-- Sección Familia -->
-    <h3>Familia</h3>
-    <div class="container p-3">
-        <div class="row">
-            @for (card of mediaCards.slice(12, 15); track card.id) {
-            <div class="col">
-                <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
-                    <img [src]="card.image" [alt]="card.title" class="card-img-top">
-                    <div class="card-body">
-                        <h4>{{card.genres}}</h4>
-                        <p class="card-text">
-                            @if (card.showFullText) {
-                            {{card.fullDescription}}
-                            } @else {
-                            {{card.shortDescription}}
-                            }
-                        </p>
-                        <button class="btn btn-primary" (click)="toggleText(card)">
-                            {{card.showFullText ? 'Menos' : 'Más'}}
-                        </button>
-                        <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
-                    </div>
-                </div>
-            </div>
-            }
-        </div>
-    </div>
+        <hr *ngIf="!last">
+    </ng-container>
 </div>

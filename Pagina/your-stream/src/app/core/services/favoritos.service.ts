@@ -49,6 +49,16 @@ export class FavoritosService {
       showFullText: false,
       isDeleting: false
     },
+    {
+      id: 4,
+      title: 'Gladiador II',
+      image: 'assets/imagenes/Gladiadorll.webp',
+      genres: 'Acción, Aventura, Drama',
+      shortDescription: 'Lucio, testigo de la caída del héroe Máximo, es forzado a combatir en el Coliseo...',
+      fullDescription: 'Lucio, testigo de la caída del héroe Máximo, es forzado a combatir en el Coliseo cuando su hogar es esclavizado por los nuevos tiranos de Roma. Con la memoria de Máximo como guía, deberá encontrar el valor para desafiar al imperio y restaurar su honor perdido.',
+      showFullText: false,
+      isDeleting: false
+    }
   ];
 
 

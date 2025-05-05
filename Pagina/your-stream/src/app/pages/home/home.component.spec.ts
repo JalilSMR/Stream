@@ -3,7 +3,6 @@ import { HomeComponent } from './home.component';
 import { HomeService, MovieCard } from '../../core/services/home.service';
 import { of, throwError } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { firstValueFrom } from 'rxjs';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -37,28 +36,31 @@ describe('HomeComponent', () => {
     component = fixture.componentInstance;
   });
 
-  it('debería cargar películas correctamente', fakeAsync(async () => {
+  it('debería cargar las películas al inicializar', fakeAsync(() => {
     mockService.getMovies.and.returnValue(of(mockMovies));
+    fixture.detectChanges(); // llama a ngOnInit
+    tick();
 
-    component.ngOnInit();
-    tick(); // Simula paso del tiempo
+    component.movieCards$!.subscribe(cards => {
+      expect(cards.length).toBe(1);
+      expect(cards[0].title).toBe('Solo Leveling');
+    });
 
-    const cards = await firstValueFrom(component.movieCards$);
-    expect(cards.length).toBe(1);
     expect(component.error).toBeNull();
     expect(component.loading).toBeFalse();
   }));
 
-  it('debería manejar error al cargar películas', fakeAsync(async () => {
+  it('debería manejar errores al cargar películas', fakeAsync(() => {
     mockService.getMovies.and.returnValue(throwError(() => new Error('Error simulado')));
+    fixture.detectChanges(); // llama a ngOnInit
+    tick();
 
-    component.ngOnInit();
-    tick(); // Simula el tiempo
-
-    const cards = await firstValueFrom(component.movieCards$);
-    expect(cards.length).toBe(0); // fallback
     expect(component.error).toBe('Error al cargar películas');
     expect(component.loading).toBeFalse();
+
+    component.movieCards$!.subscribe(cards => {
+      expect(cards.length).toBe(0);
+    });
   }));
 
   it('debería alternar entre descripción corta y completa', () => {
@@ -70,3 +72,5 @@ describe('HomeComponent', () => {
     expect(card.showFullText).toBeFalse();
   });
 });
+
+

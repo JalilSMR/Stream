@@ -3,22 +3,23 @@ import { LoginComponent } from './login.component';
 import { LoginService } from '../../core/services/login.service';
 import { Router } from '@angular/router';
 import { of } from 'rxjs';
+import { delay } from 'rxjs/operators';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
-  let loginServiceSpy: jasmine.SpyObj<LoginService>;
-  let routerSpy: jasmine.SpyObj<Router>;
+  let mockLoginService: jasmine.SpyObj<LoginService>;
+  let mockRouter: jasmine.SpyObj<Router>;
 
   beforeEach(async () => {
-    loginServiceSpy = jasmine.createSpyObj('LoginService', ['login']);
-    routerSpy = jasmine.createSpyObj('Router', ['navigate']);
+    mockLoginService = jasmine.createSpyObj('LoginService', ['login']);
+    mockRouter = jasmine.createSpyObj('Router', ['navigate']);
 
     await TestBed.configureTestingModule({
       imports: [LoginComponent],
       providers: [
-        { provide: LoginService, useValue: loginServiceSpy },
-        { provide: Router, useValue: routerSpy }
+        { provide: LoginService, useValue: mockLoginService },
+        { provide: Router, useValue: mockRouter }
       ]
     }).compileComponents();
 
@@ -26,18 +27,19 @@ describe('LoginComponent', () => {
     component = fixture.componentInstance;
   });
 
-  it('debería crearse correctamente', () => {
+  it('debería crear el componente', () => {
     expect(component).toBeTruthy();
   });
 
   it('debería activar loading y navegar al hacer login', fakeAsync(() => {
-    loginServiceSpy.login.and.returnValue(of(true));
+    mockLoginService.login.and.returnValue(of(true).pipe(delay(1000)));
 
     component.onLogin();
-    expect(component.loading).toBeTrue();
+    expect(component.loading).toBeTrue(); // loading debe estar activo
 
-    tick(1000); // Simula el retraso del login
+    tick(1000); // Simula que pasa el tiempo
+
     expect(component.loading).toBeFalse();
-    expect(routerSpy.navigate).toHaveBeenCalledWith(['/home']);
+    expect(mockRouter.navigate).toHaveBeenCalledWith(['/home']);
   }));
 });
