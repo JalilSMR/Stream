@@ -1,4 +1,4 @@
-<h1 class="text-center mt-3">Las mejores peliculas</h1>
+<h1 class="text-center mt-3">Las mejores películas</h1>
 
 @for (row of [0,1,2]; track row) {
 <div class="container p-3">
@@ -6,20 +6,22 @@
         @for (card of getRowCards(row); track card.id) {
         <div class="col">
             <div class="card" style="width: 18rem;" [class.fade-out]="card.isDeleting">
-                <img [src]="card.image" [alt]="card.title" class="card-img-top">
+                <img [src]="card.image" [alt]="card.title" class="card-img-top" />
                 <div class="card-body">
-                    <h4>{{card.genres}}</h4>
+                    <h4>{{ card.genres }}</h4>
                     <p class="card-text">
                         @if (card.showFullText) {
-                        {{card.fullDescription}}
+                        {{ card.fullDescription }}
                         } @else {
-                        {{card.shortDescription}}
+                        {{ card.shortDescription }}
                         }
                     </p>
                     <button class="btn btn-primary" (click)="toggleText(card)">
-                        {{card.showFullText ? 'Menos' : 'Más'}}
+                        {{ card.showFullText ? 'Menos' : 'Más' }}
                     </button>
-                    <button class="btn btn-danger" (click)="deleteCard(card.id)">Eliminar</button>
+                    <button class="btn btn-danger" (click)="deleteCard(card.id)">
+                        Eliminar
+                    </button>
                 </div>
             </div>
         </div>

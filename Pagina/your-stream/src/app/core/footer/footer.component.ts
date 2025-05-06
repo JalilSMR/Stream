@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent {}
+export class FooterComponent {
+  footerLinks$: Observable<{ text: string; url: string }[]> = of([
+    { text: 'Términos y condiciones', url: '#' },
+    { text: 'Política de privacidad', url: '#' }
+  ]);
+}
