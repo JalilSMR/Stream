@@ -54,7 +54,7 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 
 <img src="Pagina/Imagenes/PruebaS.png" width="600" alt="PruebaS">
 
-<img src="Pagina/Imagenes/PruebaS2" width="600" alt="PruebaS2">
+<img src="Pagina/Imagenes/PruebaS2.png" width="600" alt="PruebaS2">
 
 <img src="Pagina/Imagenes/PruebaHTML.png" width="600" alt="PruebaHTML">
 
