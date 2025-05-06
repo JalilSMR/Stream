@@ -72,6 +72,6 @@ Testing:
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
-| - Se llevaron a cabo las pruebas con éxito, generando un alto porcentaje de code coverage. <br> - Se logro separar el codigo para mejorar su estructura y mantenimiento <br> -  La pagina de generos ahora es funcional <br> | - El footer puede mejorar, evitando la contracción que genera al no completar el espacio. <br> - Aumentar la uniformidad entre las paginas debido a los nuevos cambios <br> | - Al realizar algunos tests que simulan que la pagina cargue, muestra el error del footer. <br> Perdí la uniformidad de las paginas al implementar tantos cambios | Cuando borro cards, no lo hacen de la misma manera en todas las paginas.
+| - Se llevaron a cabo las pruebas con éxito, generando un alto porcentaje de code coverage. <br> - Se logro separar el codigo para mejorar su estructura y mantenimiento. <br> -  La pagina de generos ahora es funcional. <br> | - El footer puede mejorar, evitando la contracción que genera al no completar el espacio. <br> - Aumentar la uniformidad entre las paginas debido a los nuevos cambios. <br> | - Al realizar algunos tests que simulan que la pagina cargue, muestra el error del footer. <br> Perdí la uniformidad de las paginas al implementar tantos cambios. <br> | Cuando borro cards, no lo hacen de la misma manera en todas las paginas.
 
 
