@@ -36,11 +36,11 @@ Al ser un proyecto en angular, deberas usar ng s, para iniciar la pagina y poder
 
 <img src="Pagina/Imagenes/Inicio2.png" width="600" alt="Menu">
 
-<img src="Pagina/Imagenes/series.png" width="600" alt="Series">
+<img src="Pagina/Imagenes/Series.png" width="600" alt="Series">
 
 <img src="Pagina/Imagenes/Favoritos.png" width="600" alt="Favoritos">
 
-<img src="Pagina/Imagenes/Generos.png" width="600" alt="Géneros">
+<img src="Pagina/Imagenes/Accion.png" width="600" alt="Accion">
 
 <img src="Pagina/Imagenes/IniciarSesión.png" width="600" alt="Inicio de sesión">
 Esta es la única página con un diseño diferente, donde podrás iniciar sesión en tu cuenta de usuario. 
