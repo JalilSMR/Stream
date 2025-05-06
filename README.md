@@ -38,7 +38,7 @@ Al ser un proyecto en angular, deberas usar ng s, para iniciar la pagina y poder
 
 <img src="Pagina/Imagenes/Series.png" width="600" alt="Series">
 
-<img src="Pagina/Imagenes/Favoritos.png" width="600" alt="Favoritos">
+<img src="Pagina/Imagenes/Preferencias.png" width="600" alt="Favoritos">
 
 <img src="Pagina/Imagenes/Accion.png" width="600" alt="Accion">
 
