@@ -71,6 +71,63 @@ describe('HomeComponent', () => {
     component.toggleText(card);
     expect(card.showFullText).toBeFalse();
   });
-});
 
+  describe('deleteCard', () => {
+    it('debería marcar la tarjeta como isDeleting y eliminarla después de 1500ms', fakeAsync(() => {
+      const testCard = { ...mockMovies[0] };
+      mockService.getMovies.and.returnValue(of([testCard]));
+      fixture.detectChanges();
+      
+      component.deleteCard(testCard.id);
+      
+      component.movieCards$!.subscribe(cards => {
+        const foundCard = cards.find(c => c.id === testCard.id);
+        expect(foundCard?.isDeleting).toBeTrue();
+      });
+      
+      tick(1500);
+      
+      component.movieCards$!.subscribe(cards => {
+        expect(cards.some(c => c.id === testCard.id)).toBeFalse();
+      });
+    }));
+
+    it('no debería hacer nada si la tarjeta no existe', fakeAsync(() => {
+      const testCard = { ...mockMovies[0] };
+      mockService.getMovies.and.returnValue(of([testCard]));
+      fixture.detectChanges();
+      
+      const initialCount = mockMovies.length;
+      component.deleteCard(999);
+      tick(1500);
+      
+      component.movieCards$!.subscribe(cards => {
+        expect(cards.length).toBe(initialCount);
+      });
+    }));
+  });
+
+  describe('getRowCards', () => {
+    it('debería devolver máximo 3 tarjetas por fila', () => {
+      const multipleCards = [
+        ...mockMovies,
+        { ...mockMovies[0], id: 2 },
+        { ...mockMovies[0], id: 3 },
+        { ...mockMovies[0], id: 4 }
+      ];
+      
+      const firstRow = component.getRowCards(multipleCards, 0);
+      expect(firstRow.length).toBe(3);
+      
+      const secondRow = component.getRowCards(multipleCards, 1);
+      expect(secondRow.length).toBe(1);
+    });
+
+    it('debería devolver array vacío para índices no existentes', () => {
+      const result = component.getRowCards(mockMovies, 2);
+      expect(result).toEqual([]);
+    });
+  });
+
+});
 

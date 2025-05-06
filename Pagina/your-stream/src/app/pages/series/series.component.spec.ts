@@ -118,4 +118,40 @@ describe('SeriesComponent', () => {
     const result = component.trackById(0, mock[0]);
     expect(result).toBe(1);
   });
+
+   it('debería alternar showFullText en toggleText', () => {
+    const testCard: SeriesCard = { 
+      id: 1, 
+      title: 'Test', 
+      image: '', 
+      genres: '', 
+      shortDescription: '', 
+      fullDescription: '', 
+      showFullText: false, 
+      isDeleting: false 
+    };
+    
+    component.toggleText(testCard);
+    expect(testCard.showFullText).toBe(true);
+    
+    component.toggleText(testCard);
+    expect(testCard.showFullText).toBe(false);
+  });
+
+  it('debería marcar isDeleting como true en deleteCard', fakeAsync(() => {
+    const testCard: SeriesCard = {
+      id: 2,
+      title: 'Test Delete',
+      image: '',
+      genres: '',
+      shortDescription: '',
+      fullDescription: '',
+      showFullText: false,
+      isDeleting: false
+    };
+    
+    component.deleteCard(testCard);
+    expect(testCard.isDeleting).toBe(true);
+    tick(500); 
+  }));
 });
