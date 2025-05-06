@@ -43,24 +43,22 @@ Este diseño uniforme se mantiene en todas las secciones, excepto en la página 
 Esta es la única página con un diseño diferente, donde podrás iniciar sesión en tu cuenta de usuario. 
 Actualmente, esta función está en desarrollo, por lo que al intentar iniciar sesión serás redirigido automáticamente a la página de inicio.
 
-## Proceso de creación
-Para reducir la complejidad del diseño, usé Bootstrap, lo cual me ahorró tiempo en las secciones principales de cada página (nav, body).
+## Proceso de creación 3
+Moví gran parte de la lógica de los componentes a servicios especializados, mejorando:
+Separación de responsabilidades
+Reutilización de código
+Mantenibilidad
 
-Desplegué un navbar con mis páginas y luego me centré en la creación del body, haciendo columnas de 3 para presentar las películas. Utilicé cards y añadí información como el género y la sinopsis de las películas.
+Patrón Observable (RXJS): Implementé observables para manejar flujos de datos asíncronos, permitiendo:
+Mejor manejo de operaciones asíncronas
+Comunicación entre componentes
+Cancelación de suscripciones automática
 
-Al final, desplegué un footer para mejorar la simulación, pero falta agregar un modal para mostrar los dos enlaces que contiene.
-
-Este diseño se repitió en las demás páginas, por lo que hay ligeras diferencias. Sin embargo, en la página de inicio de sesión, hubo cambios para simular el inicio del usuario. Aún hay trabajo pendiente, ya que al usar el botón de inicio de sesión, te redirige al menú principal.
-
-## Proceso de creación 2
-Descargué e instalé las últimas versiones de Angular para comenzar con una base actualizada y optimizada.
-
-Diseñé y organicé la estructura del proyecto, creando componentes específicos para cada página con el fin de mantener una arquitectura clara y modular.
-
-Implementé la lógica necesaria para migrar el contenido y funcionalidades del proyecto original, asegurando que cada página mantuviera su comportamiento original en Angular.
-
-Una vez finalizada la migración, realicé mejoras visuales utilizando SCSS y estilos personalizados, con el objetivo de optimizar la experiencia del usuario y modernizar la interfaz.
-
+Testing
+Pruebas unitarias completas: Desarrollé tests para cada componente y servicio usando Jasmine/Karma
+Pruebas de integración: Verifiqué la interacción entre componentes
+Pruebas de performance: Implementé benchmarks para operaciones críticas
+Mocking de servicios: Para aislar pruebas de componentes
 
 ## 6. Sprint Review 2
 
