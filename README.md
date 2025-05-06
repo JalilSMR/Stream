@@ -45,19 +45,28 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 
 ## Proceso de creación 3
 Moví gran parte de la lógica de los componentes a servicios especializados, mejorando:
+
 Separación de responsabilidades
+
 Reutilización de código
+
 Mantenibilidad
 
 Patrón Observable (RXJS): Implementé observables para manejar flujos de datos asíncronos, permitiendo:
 Mejor manejo de operaciones asíncronas
+
 Comunicación entre componentes
+
 Cancelación de suscripciones automática
 
 Testing
+
 Pruebas unitarias completas: Desarrollé tests para cada componente y servicio usando Jasmine/Karma
+
 Pruebas de integración: Verifiqué la interacción entre componentes
+
 Pruebas de performance: Implementé benchmarks para operaciones críticas
+
 Mocking de servicios: Para aislar pruebas de componentes
 
 ## 6. Sprint Review 2
