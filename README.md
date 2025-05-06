@@ -34,38 +34,61 @@ Al ser un proyecto en angular, deberas usar ng s, para iniciar la pagina y poder
 
 ## 5. Capturas de pagina en funcionamiento
 
-<img src="Pagina/Imagenes/Inicio.png" width="600" alt="Menu">
-Esta es la página principal donde encontrarás todas las películas disponibles. 
-Puedes expandir o contraer las sinopsis según tu preferencia, además de contar con un botón para eliminar cada tarjeta. 
-Este diseño uniforme se mantiene en todas las secciones, excepto en la página de inicio de sesión.
+<img src="Pagina/Imagenes/Inicio2.png" width="600" alt="Menu">
+
+<img src="Pagina/Imagenes/Series.png" width="600" alt="Series">
+
+<img src="Pagina/Imagenes/Preferencias.png" width="600" alt="Favoritos">
+
+<img src="Pagina/Imagenes/Accion.png" width="600" alt="Generos">
 
 <img src="Pagina/Imagenes/IniciarSesión.png" width="600" alt="Inicio de sesión">
 Esta es la única página con un diseño diferente, donde podrás iniciar sesión en tu cuenta de usuario. 
 Actualmente, esta función está en desarrollo, por lo que al intentar iniciar sesión serás redirigido automáticamente a la página de inicio.
 
-## Proceso de creación
-Para reducir la complejidad del diseño, usé Bootstrap, lo cual me ahorró tiempo en las secciones principales de cada página (nav, body).
+## Tests
 
-Desplegué un navbar con mis páginas y luego me centré en la creación del body, haciendo columnas de 3 para presentar las películas. Utilicé cards y añadí información como el género y la sinopsis de las películas.
+<img src="Pagina/Imagenes/codeCoverage.png" width="600" alt="codeCoverage">
 
-Al final, desplegué un footer para mejorar la simulación, pero falta agregar un modal para mostrar los dos enlaces que contiene.
+<img src="Pagina/Imagenes/Karma.png" width="600" alt="Karma">
 
-Este diseño se repitió en las demás páginas, por lo que hay ligeras diferencias. Sin embargo, en la página de inicio de sesión, hubo cambios para simular el inicio del usuario. Aún hay trabajo pendiente, ya que al usar el botón de inicio de sesión, te redirige al menú principal.
+<img src="Pagina/Imagenes/PruebaS.png" width="600" alt="PruebaS">
 
-## Proceso de creación 2
-Descargué e instalé las últimas versiones de Angular para comenzar con una base actualizada y optimizada.
+<img src="Pagina/Imagenes/PruebaS2.png" width="600" alt="PruebaS2">
 
-Diseñé y organicé la estructura del proyecto, creando componentes específicos para cada página con el fin de mantener una arquitectura clara y modular.
+<img src="Pagina/Imagenes/PruebaHTML.png" width="600" alt="PruebaHTML">
 
-Implementé la lógica necesaria para migrar el contenido y funcionalidades del proyecto original, asegurando que cada página mantuviera su comportamiento original en Angular.
+<img src="Pagina/Imagenes/PruebaHTML2.png" width="600" alt="PruebaHTML2">
 
-Una vez finalizada la migración, realicé mejoras visuales utilizando SCSS y estilos personalizados, con el objetivo de optimizar la experiencia del usuario y modernizar la interfaz.
+## Proceso de creación 3
+Moví gran parte de la lógica de los componentes a servicios especializados, mejorando:
 
+- Separación de responsabilidades
 
-## 6. Sprint Review 2
+- Reutilización de código
+
+- Mantenibilidad
+
+Implementé observables para manejar flujos de datos asíncronos, permitiendo:
+
+- Mejor manejo de operaciones asíncronas
+
+- Comunicación entre componentes
+
+- Cancelación de suscripciones automática
+
+Testing:
+
+- Pruebas unitarias completas: Desarrollé tests para cada componente y servicio usando Jasmine/Karma
+
+- Pruebas de integración: Verifiqué la interacción entre componentes
+
+- Mocking de servicios: Para aislar pruebas de componentes
+
+## 6. Sprint Review 3
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
-| - Se completó la migración de todas las páginas, sin omitir ningún componente ni funcionalidad. <br> - Se integró SCSS para mejorar la presentación visual y facilitar el mantenimiento de estilos. <br> - Se redujo el contenido de las cards, dando una mejor experiencia visual | - Es necesario dedicar más tiempo al diseño responsive, ya que aún no se comporta correctamente en todos los dispositivos. <br> - Considerar el uso de una API en el futuro para automatizar parte del contenido y reducir el trabajo manual. <br> | - Al estar aprendiendo Angular, repetí ciertos errores por falta de experiencia. <br> - La página de géneros presentó muchos inconvenientes técnicos, lo que requirió una gran inversión de tiempo. |
+| - Se llevaron a cabo las pruebas con éxito, generando un alto porcentaje de code coverage. <br> - Se logro separar el codigo para mejorar su estructura y mantenimiento. <br> -  La pagina de generos ahora es funcional. <br> | - El footer puede mejorar, evitando la contracción que genera al no completar el espacio. <br> - Aumentar la uniformidad entre las paginas debido a los nuevos cambios. <br> | - Al realizar algunos tests que simulan que la pagina cargue, muestra el error del footer. <br> - Perdí la uniformidad de las paginas al implementar tantos cambios. <br> - Cuando borro cards, no lo hacen de la misma manera en todas las paginas.
 
 
