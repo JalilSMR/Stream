@@ -46,6 +46,20 @@ Al ser un proyecto en angular, deberas usar ng s, para iniciar la pagina y poder
 Esta es la única página con un diseño diferente, donde podrás iniciar sesión en tu cuenta de usuario. 
 Actualmente, esta función está en desarrollo, por lo que al intentar iniciar sesión serás redirigido automáticamente a la página de inicio.
 
+## Tests
+
+<img src="Pagina/Imagenes/Prueba.png" width="600" alt="Prueba">
+
+<img src="Pagina/Imagenes/Karma.png" width="600" alt="Karma">
+
+<img src="Pagina/Imagenes/PruebaS.png" width="600" alt="PruebaS">
+
+<img src="Pagina/Imagenes/PruebaS2" width="600" alt="PruebaS2">
+
+<img src="Pagina/Imagenes/PruebaHTML.png" width="600" alt="PruebaHTML">
+
+<img src="Pagina/Imagenes/PruebaHTML2.png" width="600" alt="PruebaHTML2">
+
 ## Proceso de creación 3
 Moví gran parte de la lógica de los componentes a servicios especializados, mejorando:
 
@@ -71,7 +85,7 @@ Testing:
 
 - Mocking de servicios: Para aislar pruebas de componentes
 
-## 6. Sprint Review 2
+## 6. Sprint Review 3
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
