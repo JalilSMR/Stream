@@ -48,7 +48,7 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 
 ## Tests
 
-<img src="Pagina/Imagenes/Prueba.png" width="600" alt="Prueba">
+<img src="Pagina/Imagenes/codeCoverage.png" width="600" alt="codeCoverage">
 
 <img src="Pagina/Imagenes/Karma.png" width="600" alt="Karma">
 
