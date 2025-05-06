@@ -35,9 +35,12 @@ Al ser un proyecto en angular, deberas usar ng s, para iniciar la pagina y poder
 ## 5. Capturas de pagina en funcionamiento
 
 <img src="Pagina/Imagenes/Inicio2.png" width="600" alt="Menu">
-Esta es la página principal donde encontrarás todas las películas disponibles. 
-Puedes expandir o contraer las sinopsis según tu preferencia, además de contar con un botón para eliminar cada tarjeta. 
-Este diseño uniforme se mantiene en todas las secciones, excepto en la página de inicio de sesión.
+
+<img src="Pagina/Imagenes/series.png" width="600" alt="Series">
+
+<img src="Pagina/Imagenes/Favoritos.png" width="600" alt="Favoritos">
+
+<img src="Pagina/Imagenes/Generos.png" width="600" alt="Géneros">
 
 <img src="Pagina/Imagenes/IniciarSesión.png" width="600" alt="Inicio de sesión">
 Esta es la única página con un diseño diferente, donde podrás iniciar sesión en tu cuenta de usuario. 
