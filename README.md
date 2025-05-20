@@ -7,7 +7,7 @@ Esta página es una simulación de un servicio de streaming llamada YourStream.
 Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 
 ## 2. Requerimientos técnicos
-- Tecnologías utilizadas: HTML, JavaScript, Bootstrap, SCSS y Angular.
+- Tecnologías utilizadas: HTML, JavaScript, Bootstrap, SCSS, Angular, C#, SQL Server Management Studio 20, .Net 9, SDK 9.
 
 ## 3. Cómo instalar
 ### Prerrequisitos:
