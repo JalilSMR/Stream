@@ -62,6 +62,12 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 
 <img src="Pagina/Imagenes/PruebaHTML2.png" width="600" alt="PruebaHTML2">
 
+## Prueba de login
+
+<img src="Pagina/your-stream/src/assets/imagenes/LoginThunder.png" width="600" alt="LoginThunder">
+
+<img src="Pagina/your-stream/src/assets/imagenes/LoginT.png" width="600" alt="LoginT">
+
 ## Proceso de creación 4
 1. Implementación de T-SQL y Estructura de Base de Datos
 
@@ -103,6 +109,6 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
-| -Se logro desarrollar el backed con C# y establecer una conexión con la base de datos <br> - Se hicieron cambios en el login para poder conectarla a la API con exito <br> -  Protección de rutas con AuthGuard. <br> | - El consumo total de la API se debe llevar a cabo. <br> - Solo se registran usarios mediante Thunder Client, no estoy seguro si cambiarlo, al ser unico usuario. <br> | - No desarrolle una estructura clara al inicio de la creación del backend, lo que me llevo a muchos problemas. <br> - Perdi mucho tiempo conectando C# a mi base de datos y trabajando con versiones incorrectas en mi backend, al final borre como 7 horas de trabajo, para iniciar de nuevo.
+| -Se logro desarrollar el backed con C# y establecer una conexión con la base de datos. <br> - Se hicieron cambios en el login para poder conectarla a la API con exito. <br> -  Protección de rutas con AuthGuard. <br> | - El consumo total de la API se debe llevar a cabo. <br> - Solo se registran usarios mediante Thunder Client, no estoy seguro si cambiarlo, al ser unico usuario. <br> | - No desarrolle una estructura clara al inicio de la creación del backend, lo que me llevo a muchos problemas. <br> - Perdi mucho tiempo conectando C# a mi base de datos y trabajando con versiones incorrectas en mi backend, al final borre como 7 horas de trabajo, para iniciar de nuevo.
 
 
