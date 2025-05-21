@@ -61,29 +61,43 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 <img src="Pagina/Imagenes/PruebaHTML2.png" width="600" alt="PruebaHTML2">
 
 ## Proceso de creación 3
-Moví gran parte de la lógica de los componentes a servicios especializados, mejorando:
+1. Implementación de T-SQL y Estructura de Base de Datos
 
-- Separación de responsabilidades
+- Se diseñó y creó un esquema de base de datos en SQL Server Management Studio (SSMS) con tablas para géneros, películas, etc.
 
-- Reutilización de código
+- Las tablas fueron mapeadas correctamente a entidades en Entity Framework Core mediante el ApplicationDbContext.
 
-- Mantenibilidad
+Se generó una migración inicial (baseline) que establece la estructura completa de la base de datos.
 
-Implementé observables para manejar flujos de datos asíncronos, permitiendo:
+2. Sistema de Autenticación Seguro
+   
+- Se implementaron endpoints RESTful para registro y login (/api/auth/register y /api/auth/login).
 
-- Mejor manejo de operaciones asíncronas
+- La autenticación utiliza JSON Web Tokens (JWT) para seguridad, generando tokens con tiempo de expiración.
 
-- Comunicación entre componentes
+Todos los endpoints protegidos fueron decorados con el atributo [Authorize] para garantizar acceso solo a usuarios autenticados.
 
-- Cancelación de suscripciones automática
+3. Consumo de Datos desde Frontend
 
-Testing:
+- Se desarrollaron controladores CRUD completos para gestionar géneros, películas, series y favoritos (aún falta decidir si consumir local o de la API, pero estan listos).
 
-- Pruebas unitarias completas: Desarrollé tests para cada componente y servicio usando Jasmine/Karma
+- El frontend Angular consume estos endpoints mediante servicios HTTP.
 
-- Pruebas de integración: Verifiqué la interacción entre componentes
+- Se implementó un interceptor Angular que añade automáticamente el token JWT a las cabeceras de las peticiones.
 
-- Mocking de servicios: Para aislar pruebas de componentes
+4. Funcionalidad de Login Completa
+   
+- El sistema de login es completamente funcional, almacenando el token JWT en el almacenamiento local del navegador.
+
+- El token se utiliza para mantener la sesión del usuario y para autorizar peticiones subsiguientes.
+
+5. Arquitectura Frontend Moderna
+   
+- La aplicación Angular fue configurada usando el enfoque standalone (sin AppModule tradicional).
+
+- Se utilizó Bootstrap para el diseño responsive, integrado directamente en los componentes standalone.
+
+- Las rutas están protegidas con un AuthGuard que redirige a los usuarios no autenticados al login.
 
 ## 6. Sprint Review 3
 
