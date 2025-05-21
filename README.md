@@ -29,7 +29,7 @@ git clone https://github.com/tu-usuario/nombre-repositorio.git
 
 Al ser un proyecto en angular, deberas usar ng s, para iniciar la pagina y poder verla en el ordenador.
 
-Para el backend deberas usar dotnet run y usar Thunder Client para usar el CRUD.
+Para el backend deberas usar dotnet run en una terminal de powershell y usar Thunder Client para usar el CRUD.
 
 ## 4. Mockup de la aplicación
 <img src="Pagina/Imagenes/Mockup.png" width="600" alt="Mockup">
@@ -63,8 +63,6 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 <img src="Pagina/Imagenes/PruebaHTML2.png" width="600" alt="PruebaHTML2">
 
 ## Prueba de login
-
-<img src="Pagina/your-stream/src/assets/imagenes/LoginThunder.png" width="600" alt="LoginThunder">
 
 <img src="Pagina/your-stream/src/assets/imagenes/LoginT.png" width="600" alt="LoginT">
 
