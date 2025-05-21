@@ -64,8 +64,6 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 
 ## Prueba de login
 
-<img src="Pagina/your-stream/src/assets/imagenes/LoginThunder.png" width="600" alt="LoginThunder">
-
 <img src="Pagina/your-stream/src/assets/imagenes/LoginT.png" width="600" alt="LoginT">
 
 ## Proceso de creación 4
