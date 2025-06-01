@@ -489,3 +489,6 @@ C:\Users\Hp\OneDrive\Escritorio\Stream\Stream\Pagina\YourStream.Api\bin\Debug\ne
 C:\Users\Hp\OneDrive\Escritorio\Stream\Stream\Pagina\YourStream.Api\bin\Debug\net9.0\.env.example
 C:\Users\Hp\OneDrive\Escritorio\Stream\Stream\Pagina\YourStream.Api\bin\Debug\net9.0\DotNetEnv.dll
 C:\Users\Hp\OneDrive\Escritorio\Stream\Stream\Pagina\YourStream.Api\bin\Debug\net9.0\Sprache.dll
+C:\Users\Hp\OneDrive\Escritorio\Stream\Stream\Pagina\YourStream.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Hp\OneDrive\Escritorio\Stream\Stream\Pagina\YourStream.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Hp\OneDrive\Escritorio\Stream\Stream\Pagina\YourStream.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
