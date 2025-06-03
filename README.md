@@ -76,6 +76,14 @@ Puedes encontrar el script en los archivos
 
 <img src= "Pagina/Imagenes/Swagger.png" width="600" alt="DB">
 
+## Posibles mejores futuras
+
+- Botón de logout.
+
+- Formulario.
+
+- Icono que muestre inicio de sesión
+
 ## Proceso de creación 5
 
 Para este proceso de creación ya se habian adelantado varios puntos en el sprint pasado. 
@@ -101,6 +109,6 @@ En este sprint se hicieron ajustes a estos puntos y se agrego documentación con
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
-| -Se logro desarrollar el backed con C# y establecer una conexión con la base de datos. <br> - Se hicieron cambios en el login para poder conectarla a la API con exito. <br> -  Protección de rutas con AuthGuard. <br> | - El consumo total de la API se debe llevar a cabo. <br> - Solo se registran usarios mediante Thunder Client, no estoy seguro si cambiarlo, al ser unico usuario. <br> | - No desarrolle una estructura clara al inicio de la creación del backend, lo que me llevo a muchos problemas. <br> - Perdi mucho tiempo conectando C# a mi base de datos y trabajando con versiones incorrectas en mi backend, al final borre como 7 horas de trabajo, para iniciar de nuevo.
+| -Se cambio correctamente las rutas protegidas para liberar get y poder recibir la información sin un token y solo las importantes siguen con verificación <br> - Se corregio un error en el backend debido a la falta de DTOs. <br> -  Se paso la información a la base de datos. <br> | - Estoy con la duda del cambio de la estructura para el consumo total de la API, la creación de mi proyecto en angular se hizo con un enfoque a consumo local. Tengo todo listo en el backend asi que me gustaria saber si es obligatorio el consumo del 100% de la API. <br> | - Me confie en que habia avanzado suficiente en el sprint pasado y tuve menos tiempo para corregir errores.
 
 
