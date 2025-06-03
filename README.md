@@ -82,7 +82,7 @@ Puedes encontrar el script en los archivos
 
 - Formulario.
 
-- Icono que muestre inicio de sesión
+- Icono que muestre inicio de sesión.
 
 ## Proceso de creación 5
 
@@ -109,6 +109,6 @@ En este sprint se hicieron ajustes a estos puntos y se agrego documentación con
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
-| -Se cambio correctamente las rutas protegidas para liberar get y poder recibir la información sin un token y solo las importantes siguen con verificación <br> - Se corregio un error en el backend debido a la falta de DTOs. <br> -  Se paso la información a la base de datos. <br> | - Estoy con la duda del cambio de la estructura para el consumo total de la API, la creación de mi proyecto en angular se hizo con un enfoque a consumo local. Tengo todo listo en el backend asi que me gustaria saber si es obligatorio el consumo del 100% de la API. <br> | - Me confie en que habia avanzado suficiente en el sprint pasado y tuve menos tiempo para corregir errores.
+| -Se cambio correctamente las rutas protegidas para liberar get y poder recibir la información sin un token y solo las importantes siguen con verificación <br> - Se corregio un error en el backend debido a la falta de DTOs. <br> -  Se paso la información a la base de datos. <br> | - Estoy con la duda del cambio de la estructura para el consumo total de la API, la creación de mi proyecto en angular se hizo con un enfoque a consumo local. Tengo todo listo en el backend asi que me gustaria saber si es obligatorio el consumo del 100% de la API. <br> | - Me confie en que habia avanzado suficiente en el sprint pasado y tuve menos tiempo para corregir errores y implementar mejoras.
 
 
