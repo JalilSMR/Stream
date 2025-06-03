@@ -8,25 +8,34 @@ namespace YourStream.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
+    [Authorize]  // Protege por defecto todos los métodos
     public class MoviesController : ControllerBase
     {
         private readonly ApplicationDbContext _db;
         public MoviesController(ApplicationDbContext db) => _db = db;
 
+        // GET: api/Movies
         [HttpGet]
+        [AllowAnonymous]  // Permite acceso público sin token
         public async Task<ActionResult<IEnumerable<Movie>>> GetAll() =>
-            Ok(await _db.Movies.Include(m => m.MovieGenres).ThenInclude(mg => mg.Genre).ToListAsync());
+            Ok(await _db.Movies
+                        .Include(m => m.MovieGenres)
+                            .ThenInclude(mg => mg.Genre)
+                        .ToListAsync());
 
+        // GET: api/Movies/5
         [HttpGet("{id}")]
+        [AllowAnonymous]  // Permite acceso público sin token
         public async Task<ActionResult<Movie>> GetById(int id)
         {
             var movie = await _db.Movies
-                .Include(m => m.MovieGenres).ThenInclude(mg => mg.Genre)
-                .SingleOrDefaultAsync(m => m.Id == id);
+                                  .Include(m => m.MovieGenres)
+                                      .ThenInclude(mg => mg.Genre)
+                                  .SingleOrDefaultAsync(m => m.Id == id);
             return movie == null ? NotFound() : Ok(movie);
         }
 
+        // POST: api/Movies
         [HttpPost]
         public async Task<ActionResult<Movie>> Create([FromBody] Movie movie)
         {
@@ -35,12 +44,16 @@ namespace YourStream.Api.Controllers
             return CreatedAtAction(nameof(GetById), new { id = movie.Id }, movie);
         }
 
+        // PUT: api/Movies/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Movie movie)
         {
             if (id != movie.Id) return BadRequest();
             _db.Entry(movie).State = EntityState.Modified;
-            try { await _db.SaveChangesAsync(); }
+            try
+            {
+                await _db.SaveChangesAsync();
+            }
             catch (DbUpdateConcurrencyException)
             {
                 if (!await _db.Movies.AnyAsync(m => m.Id == id)) return NotFound();
@@ -49,6 +62,7 @@ namespace YourStream.Api.Controllers
             return NoContent();
         }
 
+        // DELETE: api/Movies/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

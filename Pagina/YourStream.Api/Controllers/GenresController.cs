@@ -8,22 +8,28 @@ namespace YourStream.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
+    [Authorize]  // Protege por defecto todos los métodos
     public class GenresController : ControllerBase
     {
         private readonly ApplicationDbContext _db;
         public GenresController(ApplicationDbContext db) => _db = db;
 
+        // GET: api/Genres
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Genre>>> GetAll() => Ok(await _db.Genres.ToListAsync());
+        [AllowAnonymous]  // Permite acceso público sin token
+        public async Task<ActionResult<IEnumerable<Genre>>> GetAll() =>
+            Ok(await _db.Genres.ToListAsync());
 
+        // GET: api/Genres/5
         [HttpGet("{id}")]
+        [AllowAnonymous]  // Permite acceso público sin token
         public async Task<ActionResult<Genre>> GetById(int id)
         {
             var genre = await _db.Genres.FindAsync(id);
             return genre == null ? NotFound() : Ok(genre);
         }
 
+        // POST: api/Genres
         [HttpPost]
         public async Task<ActionResult<Genre>> Create([FromBody] Genre genre)
         {
@@ -32,12 +38,16 @@ namespace YourStream.Api.Controllers
             return CreatedAtAction(nameof(GetById), new { id = genre.Id }, genre);
         }
 
+        // PUT: api/Genres/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Genre genre)
         {
             if (id != genre.Id) return BadRequest();
             _db.Entry(genre).State = EntityState.Modified;
-            try { await _db.SaveChangesAsync(); }
+            try
+            {
+                await _db.SaveChangesAsync();
+            }
             catch (DbUpdateConcurrencyException)
             {
                 if (!await _db.Genres.AnyAsync(g => g.Id == id)) return NotFound();
@@ -46,6 +56,7 @@ namespace YourStream.Api.Controllers
             return NoContent();
         }
 
+        // DELETE: api/Genres/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -57,3 +68,4 @@ namespace YourStream.Api.Controllers
         }
     }
 }
+
