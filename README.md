@@ -66,6 +66,12 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 
 <img src="Pagina/your-stream/src/assets/imagenes/LoginT.png" width="600" alt="LoginT">
 
+## Diagrama de base de datos
+
+<img src="Pagina/your-stream/src/assets/imagenes/DB.png" width="600" alt="DB">
+
+Puedes encontrar el script en los archivos
+
 ## Proceso de creación 4
 1. Implementación de T-SQL y Estructura de Base de Datos
 
