@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using YourStream.Api.Data;
 using Microsoft.OpenApi.Models;
-
+using System.Text.Json.Serialization;
 
 Env.Load();                          //Carga variables de .env
 
