@@ -7,7 +7,7 @@ Esta página es una simulación de un servicio de streaming llamada YourStream.
 Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 
 ## 2. Requerimientos técnicos
-- Tecnologías utilizadas: HTML, JavaScript, Bootstrap, SCSS, Angular, C#, SQL Server Management Studio 20, .Net 9, SDK 9 y Thunder Client.
+- Tecnologías utilizadas: HTML, JavaScript, Bootstrap, SCSS, Angular, C#, SQL Server Management Studio 20, .Net 9, SDK 9, Thunder Client, Swagger.
 
 ## 3. Cómo instalar
 ### Prerrequisitos:
@@ -66,44 +66,38 @@ Actualmente, esta función está en desarrollo, por lo que al intentar iniciar s
 
 <img src="Pagina/your-stream/src/assets/imagenes/LoginT.png" width="600" alt="LoginT">
 
-## Proceso de creación 4
-1. Implementación de T-SQL y Estructura de Base de Datos
+## Diagrama de base de datos
 
-- Se diseñó y creó un esquema de base de datos en SQL Server Management Studio (SSMS) con tablas para géneros, películas, etc.
+<img src="Pagina/your-stream/src/assets/imagenes/DB.png" width="600" alt="DB">
 
-- Las tablas fueron mapeadas correctamente a entidades en Entity Framework Core mediante el ApplicationDbContext.
+Puedes encontrar el script en los archivos
 
-- Se generó una migración inicial (baseline) que establece la estructura completa de la base de datos.
+## Documentación en Swagger
 
-2. Sistema de Autenticación Seguro
+<img src= "Pagina/Imagenes/Swagger.png" width="600" alt="DB">
+
+## Proceso de creación 5
+
+Para este proceso de creación ya se habian adelantado varios puntos en el sprint pasado. 
+
+1. API en ASP.NET Core – MVC
+
+Cumplido,	Controladores en Controllers/, AddControllers() y MapControllers(). EF Core y JWT ya configurados.
+
+2. Conexión con el proyecto Angular Cumplido
+
+Cumplido, CORS tiene permitido para http://localhost:4200. Angular ya posee servicios e interceptor preparados.
    
-- Se implementaron endpoints RESTful para registro y login (/api/auth/register y /api/auth/login).
+3. Implementación de login con backend
 
-- La autenticación utiliza JSON Web Tokens (JWT) para seguridad, generando tokens con tiempo de expiración.
+Cumplido, Configuración JWT en Program.cs + existencia de AuthController y auth.service.ts en Angular.
 
-- Todos los endpoints protegidos fueron decorados con el atributo [Authorize] para garantizar acceso solo a usuarios autenticados.
+4. Manejo de CORS implementado
+Cumplido,	Se registra política WithOrigins("http://localhost:4200"), luego se aplica con app.UseCors().
 
-3. Consumo de Datos desde Frontend
+En este sprint se hicieron ajustes a estos puntos y se agrego documentación con Swagger y se aseguro poblar la DB.
 
-- Se desarrollaron controladores CRUD completos para gestionar géneros, películas, series y favoritos (faltan conectarlo totalmente).
-
-- El frontend Angular consume estos endpoints mediante servicios HTTP.
-
-- Se implementó un interceptor Angular que añade automáticamente el token JWT a las cabeceras de las peticiones.
-
-4. Funcionalidad de Login Completa
-   
-- El sistema de login es completamente funcional, almacenando el token JWT en el almacenamiento local del navegador.
-
-- El token se utiliza para mantener la sesión del usuario y para autorizar peticiones subsiguientes.
-
-5. Arquitectura Moderna
-   
-- La aplicación Angular fue configurada usando el enfoque standalone (sin AppModule tradicional).
-
-- Las rutas están protegidas con un AuthGuard que redirige a los usuarios no autenticados al login.
-
-## 6. Sprint Review 4
+## 6. Sprint Review 5
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
