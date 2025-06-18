@@ -7,7 +7,7 @@ Esta página es una simulación de un servicio de streaming llamada YourStream.
 Cuenta con un diseño sencillo pero intuitivo para los usuarios.
 
 ## 2. Requerimientos técnicos
-- Tecnologías utilizadas: HTML, JavaScript, Bootstrap, SCSS, Angular, C#, SQL Server Management Studio 20, .Net 9, SDK 9, Thunder Client, Swagger.
+- Tecnologías utilizadas: HTML, JavaScript, Bootstrap, SCSS, Angular 18+, C#, SQL Server Management Studio 20, .Net 9, SDK 9, Thunder Client, Swagger.
 
 ## 3. Cómo instalar
 ### Prerrequisitos:
@@ -30,6 +30,10 @@ git clone https://github.com/tu-usuario/nombre-repositorio.git
 Al ser un proyecto en angular, deberas usar ng s, para iniciar la pagina y poder verla en el ordenador.
 
 Para el backend deberas usar dotnet run en una terminal de powershell y usar Thunder Client para usar el CRUD.
+
+### Importante:
+
+Deberas crear un usuario desde la base de datos y iniciar sesión para poder ver el contenido, de lo contrario solo tendras acceso al inicio y al login.
 
 ## 4. Mockup de la aplicación
 <img src="Pagina/Imagenes/Mockup.png" width="600" alt="Mockup">
