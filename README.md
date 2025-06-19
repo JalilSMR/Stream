@@ -38,6 +38,7 @@ Deberas crear un usuario desde la base de datos y iniciar sesión para poder ver
 O si lo prefieres, puedes usar este usuario de prueba.
 
 Usuario: usuario1
+
 Contraseña: P@ssw0rd!
 
 ## 4. Mockup de la aplicación
