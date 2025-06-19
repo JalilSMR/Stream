@@ -35,6 +35,11 @@ Para el backend deberas usar dotnet run en una terminal de powershell y usar Thu
 
 Deberas crear un usuario desde la base de datos y iniciar sesión para poder ver el contenido, de lo contrario solo tendras acceso al inicio y al login.
 
+O si lo prefieres, puedes usar este usuario de prueba.
+
+Usuario: usuario1
+Contraseña: P@ssw0rd!
+
 ## 4. Mockup de la aplicación
 <img src="Pagina/Imagenes/Mockup.png" width="600" alt="Mockup">
 
