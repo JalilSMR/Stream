@@ -9410,19 +9410,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {}
+    "C:\\Users\\Jalil Mendoza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\OneDrive\\Escritorio\\Stream\\Stream\\Pagina\\YourStream.Api\\YourStream.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Jalil Mendoza\\Desktop\\MegaStream\\Stream\\Pagina\\YourStream.Api\\YourStream.Api.csproj",
       "projectName": "YourStream.Api",
-      "projectPath": "C:\\Users\\Hp\\OneDrive\\Escritorio\\Stream\\Stream\\Pagina\\YourStream.Api\\YourStream.Api.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\OneDrive\\Escritorio\\Stream\\Stream\\Pagina\\YourStream.Api\\obj\\",
+      "projectPath": "C:\\Users\\Jalil Mendoza\\Desktop\\MegaStream\\Stream\\Pagina\\YourStream.Api\\YourStream.Api.csproj",
+      "packagesPath": "C:\\Users\\Jalil Mendoza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jalil Mendoza\\Desktop\\MegaStream\\Stream\\Pagina\\YourStream.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jalil Mendoza\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -9504,7 +9504,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
