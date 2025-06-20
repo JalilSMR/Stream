@@ -72,7 +72,7 @@ Puedes encontrar el script en los archivos
 
 - Se agregó el Dockerfile para YourStream.Api.
 
-- Se agregó el Dockerfile para your-Stream.
+- Se agregó el Dockerfile para your-stream.
 
 - Se solucionó un problema menor en el login.
 
