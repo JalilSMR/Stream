@@ -96,6 +96,6 @@ Puedes encontrar el script en los archivos
 
 | ¿Qué salió bien? | ¿Qué puedo hacer diferente? | ¿Qué no salió bien? |
 |------------------|-----------------------------|---------------------|
-| - Se agregaron los archivos Dockerfile tanto para el frontend como para el backend. <br> - Se puede acceder correctamente a los datos desde la base de datos. <br> | - Podría haberse implementado una confirmación visual al iniciar sesión y también un cierre de sesión. <br> "Un formulario de registro habría evitado tener que crear usuarios directamente en la base de datos o mediante Postman. <br> | - El tiempo debió administrarse mejor. <br> - Intenté implementar funcionalidades que terminé descartando debido a errores cometidos. <br> - Intentar hacer cambios demasiado grandes me llevó a cometer errores y perder consistencia en el diseño.
+| - Se agregaron los archivos Dockerfile tanto para el frontend como para el backend. <br> - Se puede acceder correctamente a los datos desde la base de datos. <br> | - Podría haberse implementado una confirmación visual al iniciar sesión y también un cierre de sesión. <br> Un formulario de registro habría evitado tener que crear usuarios directamente en la base de datos o mediante Postman. <br> | - El tiempo debió administrarse mejor. <br> - Intenté implementar funcionalidades que terminé descartando debido a errores cometidos. <br> - Intentar hacer cambios demasiado grandes me llevó a cometer errores y perder consistencia en el diseño.
 
 
